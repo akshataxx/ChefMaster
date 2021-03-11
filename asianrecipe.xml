@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone = "yes"?>
+<?xml-stylesheet type="application/xslt+xml" href="recipe.xsl"?>
+<!--DTD for Asian Recipes-->
+<!DOCTYPE recpies[
+	<!ELEMENT recpie (title, category, group, countryoforigin, description, ingredient+, link, direction, composer, recommendation,date,picture,timetocook,serves,poster?)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT category (#PCDATA)>
+		<!ELEMENT group (#PCDATA)>
+		<!ELEMENT countryoforigin (#PCDATA)>
+			<!ATTLIST countryoforigin continent CDATA #IMPLIED> 
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT ingredient (#PCDATA)>
+		<!ELEMENT link EMPTY>
+			<!ATTLIST link url CDATA #IMPLIED>
+		<!ELEMENT direction (step+)>
+			<!ELEMENT step (#PCDATA)>
+		<!ELEMENT composer EMPTY>
+			<!ATTLIST composer country CDATA #FIXED 'Australia'> 
+			<!ATTLIST composer title (Mr.|Mrs.|Ms.) #IMPLIED>
+			<!ATTLIST composer fname CDATA #REQUIRED>
+			<!ATTLIST composer lname CDATA #REQUIRED>
+		<!ELEMENT recommendation (#PCDATA)>
+		<!ELEMENT date (#PCDATA)>
+		<!ELEMENT picture EMPTY>
+			<!ATTLIST picture url CDATA #REQUIRED><!--Attributes holding Chef's picture-->
+			<!ATTLIST picture width CDATA #REQUIRED>
+			<!ATTLIST picture height CDATA #REQUIRED>
+		<!ELEMENT timetocook (#PCDATA)>
+		<!ELEMENT serves (#PCDATA)>
+		<!ELEMENT poster EMPTY>
+			<!ATTLIST poster url CDATA #IMPLIED><!--Attributes holding recipes picture-->
+			<!ATTLIST poster width CDATA #IMPLIED>
+			<!ATTLIST poster height CDATA #IMPLIED>
+]>
+<!--XML for Asian Recipes-->
+<recipes>
+	<!--XML for Asian Recipe1-->
+	<recipe>
+		<title>Laksa Noodle Soup</title>
+		<category>Main Course</category>
+		<group> Coconut Milk</group>
+		<countryoforigin continent= "Asia"> Singapore</countryoforigin>
+		<description> Laksa - Spicy street food noodle dish popular in Malaysia and Singapore. This homemade curry laksa recipe is so easy and delicious! good for Diabetic People too </description>
+		<ingredient>3 tablespoons cooking oil</ingredient>
+		<ingredient> &#189; pack instant curry paste</ingredient>
+		<ingredient>2 cups chicken broth</ingredient>
+		<ingredient>2 cups water</ingredient>
+		<ingredient>2 stalks lemongrass, white part only, pounded</ingredient>
+		<ingredient>10 tofu puffs, cut into pieces</ingredient>
+		<ingredient>&#189; coconut milk</ingredient>
+		<ingredient>salt to taste</ingredient>
+		<ingredient>yellow noodles</ingredient>
+		<ingredient>bean sprouts</ingredient>
+		<ingredient>10 shrimp, peeled, deveined and cooked</ingredient>
+		<ingredient>3 hard-boiled eggs, cut into halves</ingredient>
+		<link url="https://en.wikipedia.org/wiki/Noodle" />
+		<direction> 
+			<step>In a stockpot, add the oil &amp; sauté the instant curry paste until aromatic.</step>
+			<step>Add the chicken broth, water, lemongrass, tofu puffs and bring the soup to a boil. </step>
+			<step>Lower the heat to simmer. Add the coconut milk, keep the stock on simmer.</step>
+			<step>Rinse the yellow noodles and bean sprouts separately, drained and set aside.</step>
+			<step>To assemble a bowl of laksa for serving, bring to boil some yellow noodles and a handful of bean sprouts. </step>
+			<step>Drain the noodles and bean sprouts and transfer to a serving bowl.</step>
+			<step>Top the noodles with 2-3 shrimp, and some eggs.</step>
+			<step>Using a ladle, pour the soup on top of the noodles. Serve immediately.</step>
+		</direction>
+		<composer country ="Australia" title= "Ms." fname="Nandini " lname="Sharma"  />
+		<recommendation>We recommend adding a dash of gently roasted fresh basil on top for that additional aroma &amp; enhanced look </recommendation>
+		<date> Thus, 2nd Apr&apos;20</date>
+		<picture url= "images/Nandini.jpeg"  width="120"  height="120" />
+		<timetocook>30mins</timetocook>
+		<serves> 2</serves>
+		<poster url= "images/Laksa.jpg" width="350" height="250" />
+	</recipe>
+	<recipe>
+		<!--XML for Asian Recipe2-->
+		<title>Nasi Lemak</title>
+		<category>Main Course</category>
+		<group> Rice</group>
+		<countryoforigin continent= "Asia"> Malaysia</countryoforigin>
+		<description> Nasi Lemak is the de facto national dish of Malaysia. A good nasi lemak recipe is not to be taken lightly; it should be have amazing quality, texture, flavors, and the right ingredients. </description>
+		<ingredient>2 cups coconut milk steamed rice </ingredient>
+		<ingredient>tamarind pulp, size of a small ping pong ball</ingredient>
+		<ingredient> &#189;  red onion</ingredient>
+		<ingredient>1 cup ikan bilis, dried anchovies</ingredient>
+		<ingredient>&#188; teaspoon salt</ingredient>
+		<ingredient>2 hard boiled eggs, cut into half</ingredient>
+		<ingredient>3 small fish, sardines or smelt fish</ingredient>
+		<ingredient>1 small cucumber, cut into slices and then quartered</ingredient>
+		<link url="https://en.wikipedia.org/wiki/Rice" />
+		<direction> 
+			<step>Just like making steamed rice, rinse your rice and drain. Add the coconut milk, a pinch of salt, and some water. Add the pandan leaves into the rice and cook your rice.</step>
+			<step>Rinse the dried anchovies and drain the water. Fry the anchovies until they turn light brown and put aside. </step>
+			<step>Heat some oil in a pan and fry the spice paste until fragrant. Add in the onion rings. Add in the ikan bilis and stir well. Add tamarind juice, salt, and sugar. Simmer on low heat until the gravy thickens. Set aside.</step>
+			<step>Clean the small fish, cut them into half and season with salt. Deep fry. Cut the cucumber into slices and then quartered into four small pieces. Dish up the steamed coconut milk rice and pour some sambal ikan bilis on top of the rice. Serve with fried fish, cucumber slices, and hard-boiled eggs.</step>
+		</direction>
+		<composer country="Australia" title= "Mr." fname="Aaron " lname="Chan" /> 
+		<recommendation>Pandan leaves or screwpine leaves is the secret ingredient. The leaves are highly fragrant with floral smell. </recommendation>
+		<date> Wed, 1st Apr&apos;20</date>
+		<picture url= "images/Andrew.jpeg"  width="120"  height="120" />
+		<timetocook>40mins</timetocook>
+		<serves> 4</serves>
+		<poster url= "images/nasilemak.jpg" width="350" height="317" />
+	</recipe>
+	<recipe><!--XML for Asian Recipe3-->
+		<title>Mee Goreng</title>
+		<category>Main Course</category>
+		<group> Noodles</group>
+		<countryoforigin continent= "Asia"> Indonesia</countryoforigin>
+		<description> Mee Goreng is one of the most popular fried noodle dishes in Malaysia and Indonesia. Mee Goreng means fried noodles in Malaysian language. It&apos;s spicy, savory, sweet and tangy, with toppings such as fried bean curd, boiled potato &amp; squid. </description>
+		<ingredient>2 cloves garlic, minced </ingredient>
+		<ingredient>2&#189; tbsp cooking oil</ingredient>
+		<ingredient> 1 potato, boiled, peeled, and sliced</ingredient>
+		<ingredient>3 pieces fried bean curd or commonly called &quot;tofu&quot;, cut into pieces</ingredient>
+		<ingredient>4 squid, cleaned and cut into rings</ingredient>
+		<ingredient>1 lb yellow noodles, rinsed and drained</ingredient>
+		<ingredient>2 large eggs</ingredient>
+		<ingredient>1 cup bean sprouts, rinsed and drained</ingredient>
+		<ingredient>lettuce leaves, sliced, for garnishing</ingredient>
+		<ingredient>1 lime, cut into wedges</ingredient>
+		<ingredient>some chilli paste, 2 tbsp soy souce, 3 tbsp tomato ketchup</ingredient>
+		<link url="https://en.wikipedia.org/wiki/Mung_bean_sprout" />
+		<direction> 
+			<step>Combine all the ingredients in Chili Paste and blend well using a food processor.</step>
+			<step>Heat a wok and add &quot;tumis&quot; or stir fry the Chili Paste until the oil separates from chili. Set aside.</step>
+			<step>Heat up a wok on high heat and add 2 tablespoons of cooking oil. Add the garlic, 3 tablespoons of Chili Paste, potatoes, bean curd and squid. Stir fry until fragrant. Add the yellow noodles and the Sauce and continue stirring. Push the noodles to the side of the wok.</step>
+			<step>Add the remaining &#189; tablespoon cooking oil and crack the eggs on top of the oil. Scramble the eggs and mix in with the noodles. Add the bean sprouts &amp; quick stir for about 1 minute.</step>
+			<step>Dish out and garnish with sliced lettuce leaves and lime wedges. Squeeze some lime juice all over the noodles before serving.</step>
+		</direction>
+		<composer country ="Australia" title= "Mr." fname="Mark " lname="Cox" />
+		<recommendation>Fresh yellow noodles are the most popular choice, followed by the dried instant noodles. You can use Chinese egg noodles, which is widely available, but it is not how to cook mee goreng traditionally. </recommendation>
+		<date> Wed, 1st Apr&apos;20</date>
+		<picture url= "images/mark.jpeg"  width="120"  height="120" />
+		<timetocook>50mins</timetocook>
+		<serves> 4</serves>
+		<poster url= "images/Mee-Goreng.jpg" width="350" height="317" />
+	</recipe>
+</recipes>

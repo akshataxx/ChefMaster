@@ -1,0 +1,129 @@
+<!--Akshata Dhuraji c3309266 Web Technlogies Assignment2--->
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "author" content="Akshata Dhuraji" />
+		<meta name= "description" content="Web Technologies Assignment on Collection of Chef Master Recipes" />
+		<meta name = "purpose" content=" University of Newcastle-project for Web Technologies subject" />
+		<meta name = "file name" content= "Index.html uses style.css for Formatting purpose, also its linked to 2 XML files and 4 HTML files" />
+		<meta name= "date" content="Mon, 30th Mar 2020" />
+		
+		<title> Chef Master Recipes </title>
+		<!--Adding CSS stylesheet here-->
+		<link rel="stylesheet" type="text/css" href= "style.css" />
+	</head>
+	<body>
+		<!--Header Starts Here-->
+		<header class= "header">
+			<div class="wrapper">
+				<h1> <u>Chef Master Recipes </u></h1>
+			</div>
+		</header>
+		<!--Header Ends Here-->
+
+		<!--Menu Starts Here-->
+		<nav class= "menu">
+				<div class="wrapper">
+					<ul>
+						<img src="images/spoon.jpg" width="30" height="30" />
+						<a href="#"><li>Home</li></a>
+						<a href="#gluten"><li>Gluten Free Recipes</li></a>
+						<a href="#asian"><li>Asian Recipes</li></a>
+						<a href="./submitrecipe.html" target="_blank"><li> Submit Recipe</li></a>
+						<a href="./contact.html" target="_blank"><li>Contact Us</li></a>
+						<a href="./about.html" target="_blank"><li>About Us</li></a>
+					</ul>
+					<!--Main Body Starts Here-->
+						<div class= "main">
+							<div class="wrapper">
+							<h3> <u><font size="5" face= "Monotype Corsiva"> <blockquote>What to Cook for the family during isolation ? </blockquote> </font></u></h3>
+
+							<p> <font size="4"><strong>Welcome </strong> to the delicious and mouthwatering recipes of Chef master, our recipes not only satiates you cravings it also takes care of your health and fitness</font></p>
+
+							<p>Aussies are really conscious of keeping the family fed while not spending too much  — so here is the expert advice and recipes to get through this crisis. Our Website shares details of cooking instructions for many healthy recipes, feel free to browse and select recipes of your choice. These award winning recipes have been showcased and demostrated in the popular television show <i>"Chef Master - Australia" </i></p>
+
+							<p>If you’re in quarantine or have to go into lockdown, never fear: you can still get food. Here's a collection of all interesting and mouth watering recipes. If you’re in the same boat, you’ll be pleased to hear that our collection of recipes is not only delicious and tasty , it is actually a perfectly healthy component of any diet. Proven to be safe for consumption by human beings of all age groups above 3yrs.</p>
+
+							<p>We bring you a host of recipes with very simple and easily available ingredients, so that you don't need to go hopping supermarkets or grocery stores searching for ingredients. We understand and appreciate your choice to stay home and support the nation in COVID-19 battle; wouldn't it be fun if you could make the best use of this time to relish some delicious and easy to make recipes </p>
+						</div>
+					<!--Main Body Ends Here-->	
+					</div>
+					<div class="marquee"> <!--Marquee inserted with welcome message-->	
+						<marquee behaviour="scroll" direction="left"> <i> <strong> Welcome to Chef Master Recipes!!! </strong></i></marquee>
+					</div> <!--Marquee Ends here-->	
+				</div>
+		</nav>
+		<!--Menu Ends Here-->
+		<nav class= "rheader">
+			<div class="wrapper">
+				<div class="clearframe">
+					<a id="gluten"><h2> <u>Gluten Free Recipes </u></h2></a>
+					<!-- Displaying Gluten Free Recipes in Boxes-->
+						<div class="recipes">
+							<img src="./images/Fusilli.jpg" width="1000" height="170" /> <!-- Formatting for the image-->
+							<span class="recipe-name">Creamy Mushroom Pasta </span> <br />
+							<span class="recipe-ingredient"> <font color="purple">Main Ingredient: Mushroom </font></span><br/>
+							<a href="./glutenrecipe.xml" target="_blank"> <!-- Opens XML Page in new window-->
+								<button type ="button" class="btn-prep">Recipe</button>
+							</a>
+						</div>
+
+						<div class="recipes">
+							<img src="./images/broccoli.jpg" width="1000" height="170" />
+							<span class="recipe-name"> Gluten Free Broccoli Salad </span> <br />
+							<span class="recipe-ingredient"> <font color="purple">Broccoli </font></span><br/>
+							<a href="./glutenrecipe.xml" target="_blank"><!-- Opens XML Page in new window-->
+								<button type ="button" class="btn-prep">Recipe</button>
+							</a>
+						</div>
+
+						<div class="recipes">
+							<img src="./images/oatmeal.jpg" width="1000" height="170" />
+							<span class="recipe-name"> Delicious Guiltfree Oatmeal Cookies</span> <br />
+							<span class="recipe-ingredient"> <font color="purple"> Oatmeal </font></span><br/>
+							<a href="./glutenrecipe.xml" target="_blank"><!-- Opens XML Page in new window-->
+								<button type ="button" class="btn-prep">Recipe</button>
+							</a>
+						</div> 
+					<!-- Gluten Free Recipes ends here-->
+					<a id="asian"><h2> <u>Asian Recipes </u></h2></a>
+					<!-- Displaying Asian Recipes in Boxes-->			
+						<div class="recipes">
+							<img src="./images/Laksa.jpg" width="1000" height="170" /><!-- Formatting for the image-->
+							<span class="recipe-name">Laksa Noodle Soup </span> <br />
+							<span class="recipe-ingredient"> <font color="purple">Coconut Milk </font></span><br/>
+							<a href="./asianrecipe.xml" target="_blank"> <!-- Opens XML Page in new window-->
+								<button type ="button" class="btn-prep">Recipe</button>
+							</a>
+						</div>
+
+						<div class="recipes">
+							<img src="./images/nasilemak.jpg" width="1000" height="170" />
+							<span class="recipe-name"> Nasi Lemak </span> <br />
+							<span class="recipe-ingredient"> <font color="purple">Rice </font></span><br/>
+							<a href="./asianrecipe.xml" target="_blank"><!-- Opens XML Page in new window-->
+								<button type ="button" class="btn-prep">Recipe</button>
+							</a>
+						</div>
+
+						<div class="recipes">
+							<img src="./images/Mee-Goreng.jpg" width="1000" height="170" /> 
+							<span class="recipe-name"> Mee Goreng</span> <br />
+							<span class="recipe-ingredient"> <font color="purple"> Noodle </font></span><br/>
+							<a href="./asianrecipe.xml" target="_blank"><!-- Opens XML Page in new window-->
+								<button type ="button" class="btn-prep">Recipe</button>
+							</a>
+						</div>
+				</div>		<!-- Asian Recipes ends here-->
+			</div>
+		</nav>
+		<!--Footer Starts Here-->	
+		<footer class="footer">
+				<div class="wrapper">
+					<a id="contact"><p>&copy;<a href="#"> Healthy Nutritional Recipes</a>. All rights reserved , Copyright Newcastle University 2020<br/> Akshata Dhuraji, SENG1050, University of NewCastle, <u>Email:c3309266@uon.edu.au</u> </p></a>
+				</div>
+		</footer>
+		<!--Footer Ends Here-->
+	</body>
+</html>

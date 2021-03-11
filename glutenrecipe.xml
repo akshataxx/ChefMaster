@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone = "yes"?>
+<?xml-stylesheet type="application/xslt+xml" href="recipe.xsl"?>
+<!--DTD for gluten free recipes-->
+<!DOCTYPE recipes[
+	<!ELEMENT recipe (title,category, group, countryoforigin, description, ingredient+,inlink, direction, composer, recommendation,date,picture,timetocook,serves,poster?)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT category (#PCDATA)>
+		<!ELEMENT group (#PCDATA)>
+		<!ELEMENT countryoforigin (#PCDATA)>
+			<!ATTLIST countryoforigin continent CDATA #IMPLIED>
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT ingredient (#PCDATA)>
+		<!ELEMENT link EMPTY>
+			<!ATTLIST link url CDATA #IMPLIED>
+		<!ELEMENT direction (step+)>
+			<!ELEMENT step (#PCDATA)>
+		<!ELEMENT composer EMPTY>
+			<!ATTLIST composer country CDATA #FIXED 'Australia'> 
+			<!ATTLIST composer title (Mr.|Mrs.|Ms.) #IMPLIED>
+			<!ATTLIST composer fname CDATA #REQUIRED>
+			<!ATTLIST composer lname CDATA #REQUIRED>
+		<!ELEMENT recommendation (#PCDATA)>
+		<!ELEMENT date (#PCDATA)>
+		<!ELEMENT picture EMPTY>
+			<!ATTLIST picture url CDATA #REQUIRED> <!--Attributes for chef's picture-->
+			<!ATTLIST picture width CDATA #REQUIRED>
+			<!ATTLIST picture height CDATA #REQUIRED>
+		<!ELEMENT timetocook (#PCDATA)>
+		<!ELEMENT serves (#PCDATA)>
+		<!ELEMENT poster EMPTY>
+			<!ATTLIST poster url CDATA #IMPLIED><!--Attributes for recipe's picture-->
+			<!ATTLIST poster width CDATA #IMPLIED>
+			<!ATTLIST poster height CDATA #IMPLIED>
+]>
+
+<recipes> <!--XML code begins here-->
+	<recipe> <!--1st Gluten free recipe-->
+		<title>Creamy Mushroom Pasta</title>
+		<category>Starter</category>
+		<group> Pasta</group>
+		<countryoforigin continent= "Europe"> Italy</countryoforigin>
+		<description> Crispy mushrooms adds the aroma and flavour to slow cooked creamy mushroom. The dish is best served with red wine or sparkling water.Being low in sugar this recipe is good for Diabetic People too </description>
+		<ingredient>&#189; cup fresh cream</ingredient>
+		<ingredient> &#188; cup mushroom</ingredient>
+		<ingredient>&#188; cup olive oil</ingredient>
+		<ingredient>3 tbsp cilantro chopped</ingredient>
+		<ingredient>2 tbsp garlic chopped finely</ingredient>
+		<ingredient>200gm pasta of your choice</ingredient>
+		<link url="https://en.wikipedia.org/wiki/Mushroom" />
+		<direction> 
+			<step>Toss the garlic in olive oil and gently roast it</step>
+			<step>Add chopped mushrooms and toss it on high heat</step>
+			<step>Add fresh cream slowly to the Crispy Mushroom</step>
+			<step>In a deep pot take 500 liter water and bring it to boil over (100&#176;C) for about 4mins, add pasta to boiling water leave it for 5mins</step>
+			<step>strain the hot water out and wash the pasta with cold water to keep it firm</step>
+			<step>mix pasta with the crispy mushroom cream just before serving</step>
+			<step>your delicious pasta is ready to be served</step>
+		</direction>
+		<composer country ="Australia" title= "Ms." fname="Akshata " lname="Dhuraji"  />
+		<recommendation>We recommend adding a dash of gently roasted fresh basil on top for that additional aroma &amp; enhanced look </recommendation>
+		<date> Wed, 1st Apr&apos;20</date>
+		<picture url= "images/Akshata.jpeg"  width="120"  height="120" />
+		<timetocook>15mins</timetocook>
+		<serves> 8</serves>
+		<poster url= "images/Fusilli.jpg" width="250" height="250" />
+	</recipe>
+	<recipe> <!--2nd Gluten free recipe-->
+		<title>Gluten Free Broccoli Salad</title>
+		<category>Salad</category>
+		<group> Broccoli</group>
+		<countryoforigin continent= "Latina America"> Argentian</countryoforigin>
+		<description> If you&apos;re looking for a packable, potluck-friendly side salad, this is it. I’ve enjoyed a big bowl of it as a light meal, too.  </description>
+		<ingredient>1 pound broccoli florets </ingredient>
+		<ingredient>&#189; raw sunflower seeds or slivered almonds</ingredient>
+		<ingredient> &#188; cup finely chopped red onion</ingredient>
+		<ingredient>&#188; cup grated sharp cheddar cheese</ingredient>
+		<ingredient>&#188; cup cilantro chopped</ingredient>
+		<ingredient>&#188; cup extra-virgin olive oil</ingredient>
+		<ingredient>2 tbsp apple cider vinegar</ingredient>
+		<link url="https://en.wikipedia.org/wiki/Broccoli" />
+		<direction> 
+			<step>Toast the &apos;sunflower&apos; seeds: Pour the toasted seeds into a large serving bowl.</step>
+			<step>Add the chopped &quot;Broccoli&quot;, onion, cheese and cranberries to the serving bowl. </step>
+			<step>In a small bowl, combine olive oil, vinegar, mustard, honey, garlic &amp; salt.Whisk until the mixture is well blended.</step>
+			<step>Pour the dressing over the salad and stir until all of the broccoli is lightly coated in dressing. Let the salad marinate for at least 20 minutes</step>
+			<step>Divide the salad into individual bowls and serve. Leftovers will keep well for 3 to 4 days in the fridge, covered.</step>
+		</direction>
+		<composer country="Singapore" title= "Mr." fname="Andrew " lname="Lancelloti" />
+		<recommendation>I consider humble old broccoli to be a total super food &amp; this salad is loaded with broccoli. Broccoli is a member of the cruciferous family of vegetables, which offer potent anti-inflammatory, anti-cancer health benefits.</recommendation>
+		<date> Wed, 1st Apr&apos;20</date>
+		<picture url= "images/Andrew.jpeg"  width="120"  height="100" />
+		<timetocook>30mins</timetocook>
+		<serves> 4</serves>
+		<poster url= "images/broccoli.jpg" width="300" height="317" />
+	</recipe>
+	<recipe>
+		<title>Delicious Guiltfree Oatmeal Cookies</title>
+		<category>Dessert</category>
+		<group> Oatmeal</group>
+		<countryoforigin continent= "Europe"> United Kingdom</countryoforigin>
+		<description> These cookies have an added bonus: My Best-Ever Oatmeal Cookies are packed with a cup and a half of oats and only 3/4 cup of flour. </description>
+		<ingredient>1 pound Oatmeal </ingredient>
+		<ingredient>&#189; cup butter, room temperature</ingredient>
+		<ingredient> &#189; cup sugar</ingredient>
+		<ingredient>1 tbsp vanilla</ingredient>
+		<ingredient>1 egg</ingredient>
+		<ingredient>1 tbsp cinnamon</ingredient>
+		<ingredient>&#188; tbsp salt</ingredient>
+		<ingredient>1&amp;1/2 cups rolled oats</ingredient>
+		<link url="https://en.wikipedia.org/wiki/Oatmeal" />
+		<direction> 
+			<step>Pre-heat your oven to 375&#176;F (190&#176;C). Then line to large cookie sheets with parchment paper and set aside.</step>
+			<step>In a medium bowl combine the dry ingredients, apart from the sugars. Set aside. </step>
+			<step>In a large bowl cream together the butter, white and brown sugar. Once light and fluffy add the egg &amp; the vanilla and whip until combined.</step>
+			<step>Add the dry ingredients into the wet and mix with a spatula until the flour has just absorbed, do not over mix.</step>
+			<step>Lastly, fold in the oats and the raisins.</step>
+			<step>using a tablespoon measure scoop heaped tablespoons of the cookie dough onto your lined cookie sheet, leaving about 1 1/2 to 2 inches between the cookies.</step>
+			<step>Bake for about 9-10 minutes or until the cookies are golden brown and slightly risen. Don't be tempted to bake for longer or you will loose the gooey center. </step>
+			<step>Allow the cookies to cool slightly before transferring on to a wire rack to cool fully. Enjoy!</step>
+		</direction>
+		<composer country ="India" title= "Ms." fname="Sonam " lname="Agarwal" />
+		<recommendation>This dough also freezes really well for up to 3 months. Scoop it and freeze in balls so you can just take them out, defrost, and bake!</recommendation>
+		<date> Wed, 1st Apr&apos;20</date>
+		<picture url= "images/Sona.jpeg"  width="120"  height="120" />
+		<timetocook>10mins</timetocook>
+		<serves> 16</serves>
+		<poster url= "images/oatmeal.jpg" width="300" height="317" />
+	</recipe>
+</recipes>

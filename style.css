@@ -1,0 +1,379 @@
+/*Author: c3309266 Akshata Dhuraji, Web Technologies Assignment 2 of University of Newcastle */
+/*Style.CSS used by index.html*/
+/*Page setup, with margin as specified in the assignment. Decided to use sans-serif font*/
+/*File created on : 30th Mar'20; */
+*{
+	margin: 1 1;
+	padding: 0 0;
+	font-family: sans-serif;
+}
+
+body{
+	margin-left: 1cm;
+	margin-right:1cm;
+	font-family: arial, sans-seriff;
+	line-height: 25px;
+}
+/* CSS for red borders around the page for clear segmentation */
+.wrapper{  
+	border:  1px solid red;
+	width: 98%;
+	margin:	0 auto;
+	padding: 1% 1%;
+}
+
+.clearframe:after{
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+/*CSS for Header*/
+.header{
+	text-transform: uppercase;
+	background-color: darkgreen;
+	text-align: center;
+	color: white;
+}
+/*CSS for Menu*/
+.menu ul{
+	list-style-type: none;
+}
+.menu ul a active{
+	color:darkblue;
+	text-decoration: none;
+}
+.menu ul a:hover{
+	background-color: lightgrey;
+	color:red;
+	padding: 6px 7px
+}
+.menu ul a li{
+	padding: 5px;
+	display: inline;
+}
+.menu ul a visited{
+	color:grey;
+}
+/*CSS for Main Body*/
+.main{
+	margin: 1% 0;
+	background-image: url(images/bgimage.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.main h3{
+	color: darkblue;
+	text-align:center;
+}
+.main p{
+	color: darkblue;
+	text-align: justify;
+}
+
+.marquee{
+		color:darkblue;
+}
+
+.rheader{
+		text-align: center;
+		text-transform: uppercase;
+		color: purple;	
+}
+/* CSS for boxes containing recipe image */
+.recipes{
+	width: 24%;
+	border: 1px solid grey;
+	margin: 4%;
+	float: left;
+}
+.recipes:hover{
+	box-shadow: 0 0 3px 3px silver; 
+}
+/* CSS for recipe image */
+.recipes img{
+	width: 100%
+}
+/* CSS for styling the recipe */
+.recipes .recipe-name{
+	text-transform: none;
+	font-weight: bold;
+	color:darkblue;
+}
+/* CSS for styling the main ingredient of recipe */
+.recipes .recipe-ingredient{
+	text-transform: none;
+	font-style: italic;
+}
+/* CSS for button  */
+.recipes .btn-prep{
+	padding:3%;
+	margin: 3%;
+	background-color: #4CAF50;
+	color:black;
+	font-weight: bold;
+	border:none;
+}
+/* CSS for button hovering */
+.recipes .btn-prep:hover {
+	background-color: darkblue;
+	box-shadow: 0 0 3px 3px silver; 
+	color:white;
+}
+
+/*CSS for Footer*/
+.footer{
+		color: white;
+		background-color: green;
+}
+.footer p{
+	padding:0%;
+	margin: 0% 0;
+	text-align: right;
+}
+.footer p a{
+	color: tomato;
+}
+.footer p a{
+	text-decoration: none;
+}
+
+.main .contactdtls{
+	text-align: center;
+	width:50%;
+	margin: 0 auto;
+	border: 2px solid darkblue;
+	padding: 2%
+	margin: 2% auto;
+}
+
+.main .contactdtls h3{
+	text-transform: uppercase;
+	margin-bottom: 4%;
+	color: purple;
+	text-decoration: underline;	
+}
+
+.main .contactdtls .name{
+	margin-left: 12px;
+	width: 20%;
+	float: left;
+	color: darkblue;
+	float: left;
+	text-align: left;
+	display: inline-block;
+}
+
+.main .contactdtls .name #man{
+	color: red;
+}
+
+
+.main .contactdtls input[type='text'], .main .contactdtls input[type='email'],.main .contactdtls input[type='tel'],
+.main .contactdtls textarea {
+padding:1%;
+margin:0.5%;
+width: 70%;
+display: block;
+}
+
+.main .contactdtls input [type="checkbox"]{
+	margin-right:20px;
+	margin-bottom: 100px;
+	border-style:2px dotted #00f;
+	border-radius: 4px;
+	display:block;
+	padding:1%;
+}
+
+.main .contactdtls .privacy-policy{
+	margin-right: 10px;
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #5D5D5D;
+	margin-top: 10px;
+	text-align: right;
+}
+.main .contactdtls button[type='submit']
+{ 
+	text-align: center;
+	padding: 2%;
+	margin: 2%;
+	background-color: #4CAF50;
+	color: white;
+	font-weight: bold;
+	border: none;
+}
+
+.main .contactdtls button[type='reset']
+{ 
+	text-align: center;
+	padding: 2%;
+	margin: 2%;
+	background-color: darkred;
+	color: white;
+	font-weight: bold;
+	border: none;
+}
+
+.main .contactdtls button[type='submit']:hover{
+	background-color: darkblue;
+	box-shadow: 0 0 3px 2px grey;
+}
+
+.main .contactdtls button[type='reset']:hover{
+		background-color: red;
+		box-shadow: 0 0 3px 2px grey;
+}
+.main .aboutus h3{
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	color: purple;
+	text-align: center;
+	text-decoration: underline;	
+}
+.main .aboutus p{
+	color: darkblue;
+	text-align: center;
+}
+.main .aboutus ul{
+	color: darkblue;
+	text-align: center;
+}
+#aboutimg{
+width:50%;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.main .submitrecipe{
+	width:80%;
+	margin: 0 auto;
+	padding: 2%
+	margin: 2% auto;
+}
+
+.main .submitrecipe fieldset{
+	border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #4a4a4a;
+	padding: 20px;
+	box-shadow: inset 0px 0px 15px #b5b5b5;
+	-moz-box-shadow: inset 0px 0px 15px #b5b5b5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+.main .submitrecipe fieldset legend{
+	border-top: 1px solid #4a4a4a;
+	border-left: 1px solid #4a4a4a;
+	border-right: 1px solid #4a4a4a;
+	border-radius: 5px 5px 0px 0px;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #b5b5b5;
+	font-size: 15px;
+	color: darkblue;
+}
+
+.main .submitrecipe h3{
+	margin-bottom: 2%;
+	color:purple;
+}
+.main .submitrecipe .name{
+	width: 20%;
+	float: left;
+	text-align: left;
+	display: inline-block;
+	color: darkblue;
+}
+.main .submitrecipe .name #man{
+color: red;
+}
+
+.main .submitrecipe input[type='text'], .main .submitrecipe input[type='email'],.main .submitrecipe  input[type='tel'],
+.main .submitrecipe input[type='number'],.main .submitrecipe  input[type='date'], .main .submitrecipe  textarea{
+padding:1%;
+margin:0.5%;
+width: 50%;
+display: block;
+}
+
+
+.main .submitrecipe input [type="checkbox"] {
+	margin-right:20px;
+	margin-bottom: 100px;
+	text-align: left;
+	border-style:2px dotted #00f;
+	border-radius: 4px;
+	display:block;
+	background:#ff0000;" 
+	padding:1%;
+	
+}
+
+.main .submitrecipe .name input[type='radio']{
+	margin-right:10px;
+	margin-bottom: 100px;
+	text-align: left;
+	display: block;
+	padding:1%;
+}
+.main .submitrecipe .name select{
+	margin: 2 auto;
+	position: absolute;
+	display: block;
+  	transform: translate(-50%, -50%);
+  	width: 100%
+ 	padding: 30px;
+  	width: 250px;
+  	border: none;
+  	font-size: 20px;
+  	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+	
+.main .submitrecipe button[type='submit']
+{ 
+	text-align: center;
+	padding: 8px 18px;
+	margin: 2%;
+	background-color: #4CAF50;
+	color: white;
+	font-weight: bold;
+	border-radius: 3px;
+	border: none;
+}
+
+.main .submitrecipe button[type='reset']
+{ 
+	text-align: center;
+	padding: 8px 18px;
+	margin: 2%;
+	background-color: darkred;
+	color: white;
+	font-weight: bold;
+	border-radius: 3px;
+	border: none;
+}
+
+.main .submitrecipe button[type='submit']:hover{
+	background-color: darkblue;
+	box-shadow: 0 0 3px 2px grey;
+}
+
+.main .submitrecipe button[type='reset']:hover{
+		background-color: red;
+		box-shadow: 0 0 3px 2px grey;
+}
+
+.main .submitrecipe .privacy-policy{
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #5D5D5D;
+	margin-top: 10px;
+	text-align: right;
+}

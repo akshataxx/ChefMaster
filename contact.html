@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "author" content="Akshata Dhuraji" />
+		<meta name= "description" content="Web Technologies Assignment on Collection of Chef Master Recipes" />
+		<meta name = "purpose" content=" University of Newcastle-project for Web Technologies subject" />
+		<meta name = "file name" content= "contact.html uses style.css for Formatting purpose, also its linked to other HTML files" />
+		<meta name= "date" content="Mon, 22nd May 2020" />
+		
+		<title> Chef Master Recipes - Contact Us</title>
+		<!--Adding CSS stylesheet here-->
+		<link rel="stylesheet" type="text/css" href= "style.css" />
+		<script type = "text/javascript">
+			 function validate() {
+               		if( document.contactForm.fname.value == "" ) {
+            			alert( "Please provide your first name!" );
+           			 	document.contactForm.fname.focus() ;
+            			return false;
+        			 }
+        			 if( document.contactForm.lname.value == "" ) {
+            			alert( "Please provide your last name!" );
+           				 document.contactForm.lname.focus() ;
+            			return false;
+        			 }
+        			 
+            		if( document.contactForm.contact.value == "" || isNaN( document.contactForm.contact.value ) ||document.contactForm.contact.value.length != 10 ) {
+            
+           				alert( "Please provide a valid phone number, phone number must be 10 digits" );
+            			document.contactForm.contact.focus() ;
+           				 return false;
+        			 }
+        			 if(!document.contactForm.terms.checked) {
+     					alert("Please accept the Terms & Conditions and Privacy Policy");
+      					document.cotactForm.terms.focus();
+     					return false;
+    				}
+            		return( true )
+            	}
+		</script>
+	</head>
+	<body>
+		<header class= "header">
+			<div class="wrapper">
+				<h1> <u>Chef Master Recipes </u></h1>
+			</div>
+		</header>
+		<!--Header Ends Here-->
+
+		<!--Menu Starts Here-->
+		<nav class= "menu">
+				<div class="wrapper">
+					<ul>
+						<img src="./images/spoon.jpg" width="30" height="30" />
+						<a href="./index.html"><li>Home</li></a>
+						<a href="./glutenrecipe.xml"><li>Gluten Free Recipes</li></a>
+						<a href="./asianrecipe.xml"><li>Asian Recipe</li></a>
+						<a href="./submitrecipe.html" target="_blank"><li> Submit Recipe</li></a>
+						<a href="./contact.html" target="_blank"><li>Contact Us</li></a>
+						<a href="./about.html" target="_blank"><li>About Us</li></a>
+					</ul>
+					<!--Main Body Starts Here-->
+					<div class= "main">
+						<div class="wrapper">
+							<div class = "contactdtls">
+							<h3> Contact Us </h3>
+							<form name = "contactForm" onsubmit = "return(validate());">
+
+								<span class = "name"> First Name<span class id="man">*</span></span>
+								<input type ="text" name = "fname" placeholder="First Name Please" /><br/>
+
+								<span class = "name"> Last Name<span class id="man">*</span></span>
+								<input type ="text" name = "lname" placeholder="Last Name Please" /><br/>	
+
+								<span class = "name"> E-Mail</span>
+								<input type ="email" name = "email" placeholder="E-Mail Please" /> <br/>
+
+								<span class = "name"> Contact No.<span class id="man">*</span></span>
+								<input type ="tel" name = "contact" placeholder="Contact Number Please" /> <br/>
+
+								<span class = "name"> Subject </span>
+								<textarea name="about" placeholder="What's this about?"> </textarea> <br/>
+
+								<span class = "name">Your Query </span>
+								<textarea name="about" placeholder="Go-ahead we are listening"> </textarea> <br/>
+								
+								<span class="privacy-policy">
+    								<input type="checkbox" name="terms">You agree to our <a href="terms.html" target="_blank">  Terms and Condition</a> <br/><a href="privacy.html" target="_blank">Privacy Policy. </a> 
+    							</span>
+
+								<button type="submit" name="submit"> Submit</button>
+								<button type="reset" name="reset"> Reset </button><br/>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</nav>
+		<footer class="footer">
+				<div class="wrapper">
+					<a id="contact"><p>&copy;<a href="#"> Healthy Nutritional Recipes</a>. All rights reserved , Copyright Newcastle University 2020<br/> Akshata Dhuraji, SENG1050, University of NewCastle, <u>Email:c3309266@uon.edu.au</u> </p></a>
+				</div>
+		</footer>
+	</body>
+</html>

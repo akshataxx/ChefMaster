@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "author" content="Akshata Dhuraji" />
+		<meta name= "description" content="Web Technologies Assignment on Collection of Chef Master Recipes" />
+		<meta name = "purpose" content=" University of Newcastle-project for Web Technologies subject" />
+		<meta name = "file name" content= "submitrecipe.html uses style.css for Formatting purpose, also its linked to 2 HTML files terms.html and privacy.html" />
+		<meta name= "date" content="Mon, 4th May 2020" />
+		
+		<title> Chef Master Recipes - About Us</title>
+		<!--Adding CSS stylesheet here-->
+		<link rel="stylesheet" type="text/css" href= "style.css" />
+		<script type = "text/javascript">
+			 function validate() {
+			 		var emailID = document.myForm.EMail.value;
+         			atpos = emailID.indexOf("@");
+         			dotpos = emailID.lastIndexOf(".");
+         			var option=document.getElementsByName('title');
+         			if (!(option[0].checked || option[1].checked|| option[2].checked)) {
+   					 alert("Please Select Your Title");
+   					 return false;
+					}
+               		if( document.myForm.fname.value == "" ) {
+            			alert( "Please provide your first name!" );
+           			 	document.myForm.fname.focus() ;
+            			return false;
+        			 }
+        			 if( document.myForm.lname.value == "" ) {
+            			alert( "Please provide your last name!" );
+           				 document.myForm.lname.focus() ;
+            			return false;
+        			 }
+        			 if((document.myForm.EMail.value == "")||(atpos < 1 || ( dotpos - atpos < 2 ))){
+        			 	if(document.myForm.EMail.value == ""){
+            				alert( "Please provide your Email!" );
+            				document.myForm.EMail.focus() ;
+            			}
+            			else if(atpos < 1 || ( dotpos - atpos < 2 )){
+            				alert( "Please provide a valid Email address!" );
+            				document.myForm.EMail.focus() ;
+            			}
+            			return false;
+            		}
+            		if( document.myForm.contact.value == "" || isNaN( document.myForm.contact.value ) ||
+           			 document.myForm.contact.value.length != 10 ) {
+            
+           				alert( "Please provide a valid phone number, phone number must be 10 digits" );
+            			document.myForm.contact.focus() ;
+           				 return false;
+        			 }
+        			 if(document.myForm.group.value == ""){
+        			 	alert( "Please select group");
+        			 	document.myForm.group.focus();
+           				 return false;
+        			 }
+        			 if(!document.myForm.terms.checked) {
+     					alert("Please indicate that you accept the Terms and Privacy Policy");
+      					document.myForm.terms.focus();
+     					return false;
+    				}
+            		return( true )
+            	}
+		</script>
+	</head>
+	<body>
+		<header class= "header">
+			<div class="wrapper">
+				<h1> <u>Chef Master Recipes </u></h1>
+			</div>
+		</header>
+		<!--Header Ends Here-->
+
+		<!--Menu Starts Here-->
+		<nav class= "menu">
+				<div class="wrapper">
+					<ul>
+						<img src="images/spoon.jpg" width="30" height="30" />
+						<a href="./index.html" target="_blank"><li>Home</li></a>
+						<a href="./glutenrecipe.xml" target="_blank"><li>Gluten Free Receipes</li></a>
+						<a href="./asianrecipe.xml" target="_blank"><li>Asian Receipe</li></a>
+						<a href="#"><li> Submit Recipe</li></a>
+						<a href="./contact.html" target="_blank"><li>Contact Us</li></a>
+						<a href="./about.html" target="_blank"><li>About Us</li></a>
+					</ul>
+					<!--Main Body Starts Here-->
+					<div class= "main">
+						<div class="wrapper">
+							<div class = "submitrecipe">
+								
+								<h3> <u> SUBMIT YOUR RECIPE HERE</u> </h3>
+								<form name = "myForm" onsubmit = "return(validate());">
+									<fieldset>
+										<legend> Personal Details</legend>
+										<span class = "name"> Title<span class id="man">*</span></span>
+										<input type="radio" name="title" value="Mr." />
+										<label for="Mr">Mr.</label>
+
+										<input type="radio" name="title" value="Ms." />
+										<label for="Ms">Ms.</label>
+
+										<input type="radio" name="title" value="Mrs." /> 
+										<label for="Mrs">Mrs.</label><br/> <br/>
+
+										<span class = "name">First Name<span class id="man">*</span></span>
+										<input type ="text" name = "fname" placeholder="First Name Please"/><br/>
+
+										<span class = "name"> Last Name<span class id="man">*</span></span>
+										<input type ="text" name = "lname" placeholder="Last Name Please" /><br/>
+										
+
+										<span class = "name">Date of Birth </span>
+										<input type= "date" name="date" min="1920-01-01" max="2014-01-01"/><br/>
+
+										<span class = "name"> E-Mail<span class id="man">*</span></span>
+										<input type ="text" name = "EMail" placeholder="E-Mail Please" />
+										<br/>
+
+										<span class = "name"> Contact No.<span class id="man">*</span></span>
+										<input type ="text" name = "contact" placeholder="Contact Number Please" /> <br/>
+
+										<span class = "name"> Number of Previous Recipes Submitted</span>
+										<input type ="number" name = "prevreceipe" placeholder=" Please enter the number of previous recipes submitted" min="0" step="1"/> <br/>
+
+										<span class = "name">Are you a Chef </span>
+											<input type="radio" name="cook" value="Yes" checked/>
+											<label for="yes">Yes</label>
+											
+											<input type="radio" name="cook" value="No" /> 
+											<label for="no">No</label><br /><br />					
+									</fieldset>	
+									<fieldset><legend>Recipe Details </legend>
+									<span class = "name">Group<span class id="man">*</span></span>
+										<select name="group">
+											<option value="" disabled selected>None</option>
+											<option value="appetiser">Appetiser</option>
+											<option value="maincourse">Main course</option>
+											<option value="dessert">Dessert</option>
+											<option value="salad">Salad</option> 
+										</select> <br/><br/>
+									
+									<span class="name">Complexity Level</span>
+										<input type="radio" name="level" value="easy" checked/>
+										<label for= "easy">Easy</label>
+										<input type="radio" name="level" value="difficult"/> 
+										<label for= "difficult">Difficult</label><br/><br/>
+
+									<span class = "name">Name of the Dish</span>
+										<input type ="text" name = "dish_name" placeholder="Please enter name of your dish" /><br/>
+							
+									<span class = "name">Country of Origin</span>
+									<input type ="text" name = "origin" placeholder="Country of Origin" /><br/>
+
+										<span class="name">Properties</span>
+											<input type="checkbox" name="diabetic"/>
+											<label for= "prop">Suitable for Diabetic</label>
+											<input type="checkbox" name="vegan"/>
+											<label for= "prop">Vegan</label>
+											<input type="checkbox" name="spicy"/>
+											<label for= "prop">Spicy</label>
+											<input type="checkbox" name="gluten"/> 
+											<label for= "prop">Gluten Free</label><br/><br/>
+									
+									<span class="name">Ingredients</span>
+										<textarea name="ingredients"> </textarea> <br/>
+
+									<span class="name">Preparation Instructions</span>
+										<textarea name="prep"> </textarea> <br/>
+
+									<span class="name">Served</span>
+											<input type="radio" name="served" value="Cold" />
+											<label for= "serve">Cold</label>
+											<input type="radio" name="served" value="Hot" /> 
+											<label for= "serve">Hot</label><br/><br/>
+
+									<span class = "name">Description</span>
+									<textarea name="description"> </textarea><br/>
+
+									<span class = "name">Special Tip</span>
+									<textarea name="tip"> </textarea><br/>
+									
+									</fieldset>
+											<span class="privacy-policy">
+    									 	<input type="checkbox" name="terms">You agree to our <a href="terms.html" target="_blank">  Terms and Condition</a> <br/><a href="privacy.html" target="_blank">Privacy Policy. </a> 
+    										 </span>
+											<button type="submit" name="submit"> Submit</button> 
+											<button type="reset" name="reset" >Reset </button><br/>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</nav>
+		<footer class="footer">
+				<div class="wrapper">
+					<a id="contact"><p>&copy;<a href="#"> Healthy Nutritional Recipes</a>. All rights reserved , Copyright Newcastle University 2020<br/> Akshata Dhuraji, SENG1050, University of NewCastle, <u>Email:c3309266@uon.edu.au</u> </p></a>
+				</div>
+		</footer>
+	</body>
+</html>
