@@ -1,10 +1,6 @@
 ******************************************
-Program written by: Akshata Dhuraji	*
-Code : c3309266	                        *
-Course : SENG1050		        *
+Program written by: Akshata 		*
 Course Name: Web Technologies           *
-University : University of NewCastle    *
-Assignment : Assignment2                *
 *****************************************
 Files Submitted:
 1) Index.html
