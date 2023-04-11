@@ -1,19 +1,3 @@
-******************************************
-Program written by: Akshata 		*
-Course Name: Web Technologies           *
-*****************************************
-Files Submitted:
-1) Index.html
-2) submitreceipe.html
-3) contact.html
-4) aboutus.html
-5) style.css
-6) asianreceipe.xml (works in IE)
-7) glutenreceipe.xml(works in IE)
-8) recepie.xsl (works in IE)
-9) Images folder(collection of images used in webpage)
-10)Readme.txt
-
 Descriptions
 1) Index.html->Homepage file, showcase the Chefmaster title and logo, menu bar with options to navigate to other pages, welcome message, introduction message and list of receipes listed on the portal and option to see the details of these receipes. Styling for most of the page is done through style.css, however given the assignment requirement some of the styles for the welcome section is applied through the HTML tags. Style adopted for Index.HTML has been used across for all the web pages, for example the header and footer colors and text. The copyright statement.Margin left of 1cm is applied for all webpages
 
